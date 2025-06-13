@@ -1,3 +1,20 @@
+'''
+FEEDBACK
+- Generally, very well done and great use of mechanics sunch as functions, try-except blocks, if/elif/else statements.
+- Nice that you created a random function! A little tip though; There is a random module in python that 
+  provides you with a function that gives you a random number within a specified range (look it up!)
+- Using except without specifying an exception type (like ValueError) is generally not a good idea, as it catches any error that 
+  may occur, and you generally only want to catch errors that you are AWARE of. Besides that, you can no longer quit the program in your terminal
+  by using a short cut, because this is viewed as an exception and it can TRULY mess with your pc. 
+- The guessing game main function is good. 
+- I think it's a nice touch that you added different messages depending on the amount of tries of the user!
+- Right now, you have a parameter in your guessing_game function called 'number'. You actually don't need this. You can remove this 
+  as a parameter and call the random function from WITHIN the guessing_game function. Whenever you don't need to pass along an
+  argument, you'd better not do it. like this:
+  def guessing_game():
+      number = random()
+'''
+
 # function to generate a random number based on user input.
 def random():
     while True:
